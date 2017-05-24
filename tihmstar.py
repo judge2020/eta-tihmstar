@@ -15,7 +15,7 @@ def search_reply():
 			print('shouldnt tweet here')
 		else:
 			print('i should tweet to ' + str(tweet.id))
-			#api.update_status('@' + tweet.user.screen_name + ' ETA: Soon. (automated reply)', in_reply_to_status_id=tweet.id)
+			#api.update_status('@' + tweet.user.screen_name + ' ETA: Soon™ (automated reply)', in_reply_to_status_id=tweet.id)
 			tweetsfile.write(str(tweet.id))
 
 	tweetsfile.close()
